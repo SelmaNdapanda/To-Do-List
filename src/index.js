@@ -1,4 +1,5 @@
 import _ from 'lodash';
+import './style.css';
 
 const task = [
     { description: 'Cook lunch', isCompleted: false, index: 0 },
@@ -9,7 +10,7 @@ const task = [
   const taskList = () => {
     let taskListContent = '';
     task.forEach((item) => {
-      taskListContent += `<li class="activity"><input class="activity-check" type="checkbox"><span class="list">${item.description}</span><i class='fa fa-ellipsis-v' style="margin-left: auto"></i></li>`;
+      taskListContent += `<li class="activity"><input class="activity-check" type="checkbox"><span class="list">${item.description}</span><i class='fa></i></li>`;
     });
     document.querySelector('.activity-container').innerHTML = taskListContent;
   };
