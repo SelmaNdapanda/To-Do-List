@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+} 
+
+body {
+    background: #f1f2f5;
+}
+
+.h1 {
+    margin-bottom: 30px;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+.wrapper-container {
+    width: 100%;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2px;
+    box-shadow: 1px 1px 5px gray;
+  }
+  
+  h2 {
+    margin: 0;
+    padding: 2%;
+    background-color: white;
+  }
+  
+  .plus-icon {
+    width: 15px;
+    padding-left: 5%;
+    cursor: pointer;
+  }
+  
+  .fa:hover {
+    cursor: move;
+  }
+  
+  .icon1 {
+    float: right;
+    color: rgb(142, 147, 151);
+    cursor: pointer;
+    font-size: medium;
+  }
+  
+  .task {
+    display: flex;
+    padding: 3%;
+    background-color: white;
+  }
+  
+  .task-input {
+    width: 100%;
+    margin-bottom: 1px;
+    background-color: white;
+  }
+  
+  .task-box {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: whitesmoke;
+    row-gap: 2px;
+  }
+  
+  .todo-text {
+    width: 85%;
+    border: none;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  input::placeholder {
+    font-style: italic;
+  }
+  
+  .task-check {
+    margin-right: 2%;
+  }
+  
+  .list {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+  }
+  
+  .clear-container {
+    text-align: center;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .clear-btn {
+    padding: 2%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+
+  .fa-ellipsis-v {
+  margin-left: auto
+  }
