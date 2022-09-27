@@ -1,3 +1,5 @@
+import _ from 'lodash';
+
 const task = [
     { description: 'Cook lunch', isCompleted: false, index: 0 },
     { description: 'Do laundry', isCompleted: false, index: 1 },
