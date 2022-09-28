@@ -9,7 +9,8 @@ body {
     background: #f1f2f5;
 }
 
-.h1 {
+h1 {
+    margin-top: 30px;
     margin-bottom: 30px;
 }
   
@@ -21,23 +22,41 @@ body {
   }
   
 .wrapper-container {
-    width: 100%;
-    background-color: whitesmoke;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 2px;
     box-shadow: 1px 1px 5px gray;
-  }
-  
-  h2 {
+    margin: 2%;
+}
+
+.task-title {
+    display: flex;
     margin: 0;
     padding: 2%;
-    background-color: white;
-  }
+    background-color: #ffff;
+}
+
+.sync-icon {
+    display: flex;
+    justify-content: right;
+    padding-top: 5px;
+    margin: auto 5% auto auto;
+}
+
+.task-name {
+    display: flex;
+    margin: 0;
+    padding: 2%;
+    margin-bottom: 1px;
+    background-color: #ffff;
+}
   
   .plus-icon {
     width: 15px;
-    padding-left: 5%;
+    display: flex;
+    justify-content: right;
+    margin: auto 5% auto auto;
     cursor: pointer;
   }
   
@@ -55,12 +74,6 @@ body {
   .task {
     display: flex;
     padding: 3%;
-    background-color: white;
-  }
-  
-  .task-input {
-    width: 100%;
-    margin-bottom: 1px;
     background-color: white;
   }
   
