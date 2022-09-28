@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<script defer src="main.js"></script></head>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <h1>To Do List</h1>
+            </header>
+            <div class="wrapper-container">
+                <div class="task-title">
+                    <h2>Today's To Do</h2>
+                    <i class="fas fa-sync sync-icon"></i>
+                </div>
+                <div class="task-name">
+                    <input type="text" id="description" class="task-desk" placeholder="Add to your list...">
+                    <i class="fas fa-plus-square plus-icon"></i>
+                </div>
+                <ul class="activity-container"></ul>
+                <div class="clear-container">
+                    <button class="clear-btn" type="button">Clear all completed</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

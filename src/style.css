@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #f1f2f5;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2px;
+  box-shadow: 1px 1px 5px gray;
+  margin: 2%;
+}
+
+.task-title {
+  display: flex;
+  margin: 0;
+  padding: 2%;
+  background-color: #ffff;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.sync-icon {
+  display: flex;
+  justify-content: right;
+  padding-top: 5px;
+  margin: auto 5% auto auto;
+  cursor: pointer;
+}
+
+.task-name {
+  display: flex;
+  margin: 0;
+  padding: 2%;
+  margin-bottom: 1px;
+  background-color: #ffff;
+}
+
+.task-desk {
+  width: 85%;
+  border: none;
+  padding: 10px;
+  background-color: #ffff;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+input::placeholder {
+  font-style: italic;
+}
+
+.plus-icon {
+  width: 15px;
+  display: flex;
+  justify-content: right;
+  margin: auto 5% auto auto;
+  cursor: pointer;
+}
+
+.fa:hover {
+  cursor: move;
+}
+
+.activity-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2px;
+}
+
+.activity {
+  display: flex;
+  padding: 3%;
+  background-color: #ffff;
+}
+
+.activity-check {
+  margin-right: 3%;
+}
+
+.list {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.clear-container {
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.clear-btn {
+  padding: 2%;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
