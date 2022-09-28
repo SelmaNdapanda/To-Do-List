@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-} 
+}
 
 body {
   background: #f1f2f5;
@@ -14,14 +14,14 @@ h1 {
   margin-bottom: 30px;
   font-weight: bold;
 }
-  
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  }
-  
+}
+
 .wrapper-container {
   width: 80%;
   display: grid;
@@ -71,7 +71,7 @@ h2 {
 input::placeholder {
   font-style: italic;
 }
-  
+
 .plus-icon {
   width: 15px;
   display: flex;
@@ -79,7 +79,7 @@ input::placeholder {
   margin: auto 5% auto auto;
   cursor: pointer;
 }
-  
+
 .fa:hover {
   cursor: move;
 }
@@ -102,26 +102,26 @@ input::placeholder {
 .activity-check {
   margin-right: 3%;
 }
-  
+
 .list {
   font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
-  
-  .clear-container {
-    text-align: center;
-  }
-  
-  button {
-    background-color: transparent;
-    border: none;
-  }
-  
-  .clear-btn {
-    padding: 2%;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
-  }
+
+.clear-container {
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.clear-btn {
+  padding: 2%;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
