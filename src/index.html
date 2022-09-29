@@ -21,10 +21,12 @@
                     <h2>Today's To Do</h2>
                     <i class="fas fa-sync sync-icon"></i>
                 </div>
-                <div class="task-name">
+                <form id ="task-name" action="POST" class="input-icon">
                     <input type="text" id="description" class="task-desk" placeholder="Add to your list...">
-                    <i class="fas fa-plus-square plus-icon"></i>
-                </div>
+                    <button id="taskSubmit" type="submit">
+                        <i class="fas fa-plus-square plus-icon"></i>
+                    </button>
+                </form>
                 <ul class="activity-container"></ul>
                 <div class="clear-container">
                     <button class="clear-btn" type="button">Clear all completed</button>

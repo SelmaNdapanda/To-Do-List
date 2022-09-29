@@ -50,7 +50,7 @@ h2 {
   cursor: pointer;
 }
 
-.task-name {
+#task-name {
   display: flex;
   margin: 0;
   padding: 2%;
@@ -93,16 +93,6 @@ input::placeholder {
   row-gap: 2px;
 }
 
-.activity {
-  display: flex;
-  padding: 3%;
-  background-color: #ffff;
-}
-
-.activity-check {
-  margin-right: 3%;
-}
-
 .list {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
@@ -124,4 +114,45 @@ button {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
+}
+
+.task {
+  display: flex;
+  padding: 3%;
+  background-color: #ffff;
+}
+
+.input-icon {
+  width: 100%;
+  margin-right: 10%;
+  background-color: #ffff;
+}
+
+#taskSubmit {
+  font-size: 16px;
+  width: 20%;
+  background-color: white;
+  margin: 0;
+  cursor: pointer;
+  padding-left: 10%;
+}
+
+.task-text {
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.task-text:focus {
+  outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.task-check {
+  margin-right: 2%;
 }
