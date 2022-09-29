@@ -1,10 +1,10 @@
 import { saveLocal } from './storage.js';
 
 export const add = (tasks) => {
+  console.log(document.querySelector('#description').value);
   tasks.push({
     description: document.querySelector('#description').value, isCompleted: false, index: tasks.length + 1,
   });
-  document.querySelector('#description').value = '';
   saveLocal(tasks);
 };
 
