@@ -16,7 +16,7 @@ export const updateIndex = (tasks) => {
   });
 };
 
-export const removeDone = (tasks) => {
+export const removeEverything = (tasks) => {
   tasks = tasks.filter((elem) => elem.isCompleted === false);
   updateIndex(tasks);
   saveLocal(tasks);

@@ -65,6 +65,6 @@ document.querySelector('#task-name').addEventListener('submit', (event) => {
   taskList();
 });
 document.querySelector('.clear-container').addEventListener('click', () => {
-  task.removeDone(tasks);
+  task.removeEverything(tasks);
   taskList();
 });

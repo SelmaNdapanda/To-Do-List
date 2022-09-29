@@ -76,7 +76,7 @@ input::placeholder {
   width: 15px;
   display: flex;
   justify-content: right;
-  margin: auto 5% auto auto;
+  margin: auto 50% auto auto;
   cursor: pointer;
 }
 
@@ -155,4 +155,8 @@ button {
 
 .task-check {
   margin-right: 2%;
+}
+
+.deleteBtn {
+  margin: auto 4% auto auto;
 }
