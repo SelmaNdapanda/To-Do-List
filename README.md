@@ -1,4 +1,4 @@
-# ToDoList
+# To-Do-List
 
 "To-do list" is a tool that helps to organize your day. It simply lists the tasks that you need to perform and allow you to mark them as complete. 
 
@@ -8,6 +8,10 @@
 - CSS
 - Javascript
 - Webpack
+
+## Live Demo
+
+[https://selmandapanda.github.io/To-Do-List/](https://selmandapanda.github.io/To-Do-List/dist/)
 
 ## Getting Started
 
