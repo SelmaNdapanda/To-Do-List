@@ -1,5 +1,5 @@
 TN:
-SF:src/storage.js
+SF:src\storage.js
 FN:1,(anonymous_0)
 FN:5,(anonymous_1)
 FN:6,(anonymous_2)
@@ -23,7 +23,7 @@ BRF:2
 BRH:0
 end_of_record
 TN:
-SF:src/task.js
+SF:src\task.js
 FN:4,(anonymous_0)
 FN:13,(anonymous_1)
 FN:15,(anonymous_2)

@@ -14,4 +14,16 @@ describe('add', () => {
     expect(newList.index).toBe(0);
   });
 
+  // Add one li
+  test('test if add functions add exactly one <li>', () => {
+    document.body.innerHTML = '<li class="task" draggable="true">'
+  + '<input type="checkbox" class="task-check" />'
+  + '<input class="task-text" />'
+  + '<button class="far fa-trash-alt deleteBtn"></button>'
+  + '</li>';
+    task.add();
+    const addList = document.querySelectorAll('.activity-container li');
+    expect(addList).toHaveLength(0);
+  });
+
 });
