@@ -1,5 +1,5 @@
-import localStoreMock from '../__mock__/remove';
-import Tasks from '../src/addTodo';
+import localStoreMock from '../__mock__/remove.js';
+import Tasks from '../src/addTodo.js';
 
 const task = new Tasks();
 
@@ -59,44 +59,4 @@ describe('add and remove', () => {
     document.querySelector('button[id="2"]').click();
     task.removeTodo(2);
   });
-
-  // const newList =
-  // const newList2 = { description: 'Justice', isCompleted: false, index: 1 };
-  // task.add(newList);
-  // task.add(newList2);
-  // console.log(newList2)
-  // expect(newList.description).toBe('selma');
-  // expect(newList.isCompleted).toBe(false);
-  // expect(newList.index).toBe(0);
-  // });
-
-  // Add one li
-  // test('test if add function add\'s exactly one <li>', () => {
-
-  // task.add();
-  // const addList = document.querySelectorAll('.activity-container li');
-  // console.log(addList)
-  //   expect(addList).toHaveLength(0);
-  // });
-
-  // remove
-  // test('Delete todo item', () => {
-  //   const removeDelete = document.querySelectorAll('.deleteBtn');
-  // console.log(removeDelete)
-  // removeDelete.forEach((btn) => {
-  //   btn.addEventListener('click', (e) => {
-  // const element = btn.parentNode;
-  // console.log(element)
-  // element.remove();
-  // task.obj(e.target.parentNode.index);
-
-  //     })
-  //   })
-  //   document.querySelector('button[index="0"]').click();
-  //   task.odj(0);
-  // })
-
-  // test('reminder', () => {
-
-  // })
 });

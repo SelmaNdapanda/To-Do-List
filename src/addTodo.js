@@ -1,4 +1,4 @@
-import localStoreMock from '../__mock__/remove';
+import localStoreMock from '../__mock__/remove.js';
 
 export default class Tasks {
   constructor() {
