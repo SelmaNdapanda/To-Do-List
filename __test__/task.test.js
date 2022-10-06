@@ -1,0 +1,102 @@
+import localStoreMock from '../__mock__/remove';
+import Tasks from '../src/addTodo';
+
+const task = new Tasks();
+
+const liHtml = (obj) => {
+  const html = `<li class="task" draggable="true">
+   <input id="${obj.id}" type="checkbox" class="task-check" ${obj.isCompleted}/>
+   <input id="${obj.id}" class="task-text" value="${obj.description}"/>
+   <button id="${obj.id}" class="far fa-trash-alt deleteBtn"></button>
+   </li>`;
+  return html;
+};
+
+describe('add and remove', () => {
+  // Imitate local storage
+  test('Add todo Item', () => {
+    const mockStoreBody = `
+    <ul class="todo-body"></ul>
+    `;
+
+    document.body.insertAdjacentHTML('afterbegin', mockStoreBody);
+    const todoBody = document.querySelector('.todo-body');
+    let newList = {
+      description: 'selma',
+      isCompleted: false,
+      index: 1,
+      id: 1,
+    };
+
+    task.addTodo(newList);
+    todoBody.insertAdjacentHTML('afterbegin', liHtml(newList));
+    let countTodo = todoBody.children.length;
+    expect(localStoreMock.data[0]).toEqual(newList);
+    expect(countTodo).toBe(1);
+
+    newList = {
+      description: 'Justice',
+      isCompleted: true,
+      index: 2,
+      id: 2,
+    };
+    task.addTodo(newList);
+    todoBody.insertAdjacentHTML('afterbegin', liHtml(newList));
+    countTodo = todoBody.children.length;
+    expect(localStoreMock.data[1]).toEqual(newList);
+    expect(countTodo).toBe(2);
+  });
+
+  test('Delete todo Item', () => {
+    const DeleteBtn = document.querySelectorAll('.deleteBtn');
+    DeleteBtn.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        const elem = btn.parentNode;
+        elem.remove();
+        task.removeTodo(e.target.parentNode.id);
+      });
+    });
+    document.querySelector('button[id="2"]').click();
+    task.removeTodo(2);
+  });
+
+  // const newList =
+  // const newList2 = { description: 'Justice', isCompleted: false, index: 1 };
+  // task.add(newList);
+  // task.add(newList2);
+  // console.log(newList2)
+  // expect(newList.description).toBe('selma');
+  // expect(newList.isCompleted).toBe(false);
+  // expect(newList.index).toBe(0);
+  // });
+
+  // Add one li
+  // test('test if add function add\'s exactly one <li>', () => {
+
+  // task.add();
+  // const addList = document.querySelectorAll('.activity-container li');
+  // console.log(addList)
+  //   expect(addList).toHaveLength(0);
+  // });
+
+  // remove
+  // test('Delete todo item', () => {
+  //   const removeDelete = document.querySelectorAll('.deleteBtn');
+  // console.log(removeDelete)
+  // removeDelete.forEach((btn) => {
+  //   btn.addEventListener('click', (e) => {
+  // const element = btn.parentNode;
+  // console.log(element)
+  // element.remove();
+  // task.obj(e.target.parentNode.index);
+
+  //     })
+  //   })
+  //   document.querySelector('button[index="0"]').click();
+  //   task.odj(0);
+  // })
+
+  // test('reminder', () => {
+
+  // })
+});
