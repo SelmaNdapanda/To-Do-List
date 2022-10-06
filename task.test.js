@@ -25,5 +25,4 @@ describe('add', () => {
     const addList = document.querySelectorAll('.activity-container li');
     expect(addList).toHaveLength(0);
   });
-
 });
