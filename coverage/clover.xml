@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1665133392576" clover="3.2.0">
-  <project timestamp="1665133392576" name="All files">
+<coverage generated="1665136193269" clover="3.2.0">
+  <project timestamp="1665136193281" name="All files">
     <metrics statements="22" coveredstatements="19" conditionals="2" coveredconditionals="1" methods="13" coveredmethods="11" elements="37" coveredelements="31" complexity="0" loc="22" ncloc="22" packages="2" files="2" classes="2"/>
     <package name="__mock__">
       <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="localStorageMock.js" path="/Users/albino/Desktop/Dev/patners/To-Do-List/__mock__/localStorageMock.js">
+      <file name="localStorageMock.js" path="C:\Users\takah investment\OneDrive\Documents\Microverse\Microverse Projects\To-Do-List\__mock__\localStorageMock.js">
         <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="2" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
@@ -12,7 +12,7 @@
     </package>
     <package name="src">
       <metrics statements="20" coveredstatements="18" conditionals="2" coveredconditionals="1" methods="12" coveredmethods="11"/>
-      <file name="tasklogicmock.js" path="/Users/albino/Desktop/Dev/patners/To-Do-List/src/tasklogicmock.js">
+      <file name="tasklogicmock.js" path="C:\Users\takah investment\OneDrive\Documents\Microverse\Microverse Projects\To-Do-List\src\tasklogicmock.js">
         <metrics statements="20" coveredstatements="18" conditionals="2" coveredconditionals="1" methods="12" coveredmethods="11"/>
         <line num="5" count="2" type="stmt"/>
         <line num="9" count="4" type="stmt"/>

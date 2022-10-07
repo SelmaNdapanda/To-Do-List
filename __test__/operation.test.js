@@ -22,5 +22,24 @@ describe('Todo List operations', () => {
     expect(localStoreMock.data[0].description).toMatch(newDescription);
   });
 
+  // complete status
+  test('Todo list should be marked as completed TRUE', () => {
+    const todoCheckBox = document.querySelector('.task-check');
+
+    expect(todoCheckBox.checked).toBeFalsy();
+    todoCheckBox.checked = true;
+    task.isCompletedStatus(todoCheckBox.id, todoCheckBox.checked);
+
+    expect(localStoreMock.data[0].isCompleted).toBeTruthy();
+    expect(todoCheckBox.checked).toBeTruthy();
+  });
+
+  // clear all checked taks
+  test('Clear all checked todo task', () => {
+    const clearAll = document.querySelector('.clear-btn');
+    clearAll.addEventListener('click', task.clearAllCompletedTask());
+    clearAll.click();
+    expect(localStoreMock.data.length).toBe(0);
+  });
 
 });

@@ -1,5 +1,5 @@
 TN:
-SF:__mock__/localStorageMock.js
+SF:__mock__\localStorageMock.js
 FN:4,(anonymous_0)
 FNF:1
 FNH:0
@@ -12,7 +12,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/tasklogicmock.js
+SF:src\tasklogicmock.js
 FN:4,(anonymous_0)
 FN:8,(anonymous_1)
 FN:13,(anonymous_2)
