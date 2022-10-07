@@ -34,7 +34,7 @@ describe('add and remove', () => {
     expect(localStoreMock.data[0]).toEqual(newList);
     expect(countTodo).toBe(1);
 
-       // Add object 2
+    // Add object 2
     newList = {
       description: 'Justice',
       isCompleted: true,
@@ -48,7 +48,7 @@ describe('add and remove', () => {
     expect(countTodo).toBe(2);
   });
 
-  // Delete 
+  // Delete
   test('Delete todo Item', () => {
     const DeleteBtn = document.querySelectorAll('.deleteBtn');
     DeleteBtn.forEach((btn) => {

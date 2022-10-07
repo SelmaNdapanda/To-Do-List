@@ -41,5 +41,4 @@ describe('Todo List operations', () => {
     clearAll.click();
     expect(localStoreMock.data.length).toBe(0);
   });
-
 });
