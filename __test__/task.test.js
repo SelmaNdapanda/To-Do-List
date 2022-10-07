@@ -1,5 +1,5 @@
-import localStoreMock from '../__mock__/remove.js';
-import Tasks from '../src/addTodo.js';
+import localStoreMock from '../__mock__/localStorageMock.js';
+import Tasks from '../src/tasklogicmock.js';
 
 const task = new Tasks();
 
@@ -19,6 +19,7 @@ describe('add and remove', () => {
     <ul class="todo-body"></ul>
     `;
 
+    // Add object 1
     document.body.insertAdjacentHTML('afterbegin', mockStoreBody);
     const todoBody = document.querySelector('.todo-body');
     let newList = {
@@ -27,13 +28,13 @@ describe('add and remove', () => {
       index: 1,
       id: 1,
     };
-
     task.addTodo(newList);
     todoBody.insertAdjacentHTML('afterbegin', liHtml(newList));
     let countTodo = todoBody.children.length;
     expect(localStoreMock.data[0]).toEqual(newList);
     expect(countTodo).toBe(1);
 
+    // Add object 2
     newList = {
       description: 'Justice',
       isCompleted: true,
@@ -47,6 +48,7 @@ describe('add and remove', () => {
     expect(countTodo).toBe(2);
   });
 
+  // Delete
   test('Delete todo Item', () => {
     const DeleteBtn = document.querySelectorAll('.deleteBtn');
     DeleteBtn.forEach((btn) => {
@@ -60,3 +62,5 @@ describe('add and remove', () => {
     task.removeTodo(2);
   });
 });
+
+export { localStoreMock, task };
